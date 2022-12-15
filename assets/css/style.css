@@ -1,29 +1,39 @@
-* {
+/* This is the universal selector, which determines box sizing, padding, and margin unless further modifed by class, id, or element selectors. */
+* { 
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* This makes the entire body background the color of #drdcd6 */
 body {
     background-color: #d9dcd6;
 }
-
+/* This selector makes all anchor tags the color of #fffffff with no text-decoration */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* This selector makes all paragraph size for font 16 px */
+p {
+    font-size: 16px;
+}
+/* This selector applies to anything with the class selector of header and makes the following code happen */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/* This selector applies to the h1 tag under the header so that it is displayed inline-block with a 48px font size */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* This selector applies to the seo class that is under the h1 child within the header parent */
 .header h1 .seo {
     color: #d9dcd6;
 }
-
+/* This selector applies to any div child element under the header parent element which floats the information to the right of the page */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,25 +41,18 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/* This selector applies to the list under div child element under header parent element */
 .header div ul {
     list-style-type: none;
 }
-
+/* This selector applies to the actual list components under the previously mentioned selector to make the list display as an inline element with a slight margin on the left side of each part of the list*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
-p {
-    font-size: 16px;
-}
-
+/* This selector actually brings in the image that is displayed and gives it all the properties listed below */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,23 +61,23 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* This is a class selector that when applied, floats anything (usually an image) to the left with a slight margin to the right of 25px */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* This class selector floats an element to the right of text with a slight margin to the left of 25px */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* This class selector applies a width of 75% to the section, but it displays as an inline element with a slight left margin 20px */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
+/* This class selector applies to anything with the benefits class tag, and gives a slight right margin of 20px, padding of 20px, text gets pushed below each floated component */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,55 +88,61 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/* This class selector gives a slight margin on the bottom of the element with a color of #ffffff */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
+/* This class selector gives a slight margin on the bottom of the element with a color of #ffffff */
 
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
 }
+/* This class selector gives a slight margin on the bottom of the element with a color of #ffffff */
 
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
+/* This class selectors applies to anything with the h3 tag underneath the benefit-lead class and aligns the text to the center of the section*/
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+/* This class selectors applies to anything with the h3 tag underneath the benefit-brand class and aligns the text to the center of the section*/
 
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+/* This class selectors applies to anything with the h3 tag underneath the benefit-cost class and aligns the text to the center of the section*/
 
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+/* This class selector makes the img under benefit-lead class display as a block element, with a 10px margin centered due to auto, with a maximum width of 150 px */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+/* This class selector makes the img under benefit-brand class display as a block element, with a 10px margin centered due to auto, with a maximum width of 150 px */
 
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
+/* This class selector makes the img under benefit-cost class display as a block element, with a 10px margin centered due to auto, with a maximum width of 150 px */
 
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* This class selector makes anything under the search-engine-optimization tag with a slight bottom margin of 20px, padding of 50px, a height of 300px, along with a designated font family, background color of blue, and actual color for contents of white */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -142,6 +151,7 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* This class selector makes anything under the online-reputation-management tag with a slight bottom margin of 20px, padding of 50px, a height of 300px, along with a designated font family, background color of blue, and actual color for contents of white */
 
 .online-reputation-management {
     margin-bottom: 20px;
@@ -151,6 +161,7 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+/* This class selector makes anything under the social-media-marketing tag with a slight bottom margin of 20px, padding of 50px, a height of 300px, along with a designated font family, background color of blue, and actual color for contents of white */
 
 .social-media-marketing {
     margin-bottom: 20px;
@@ -160,41 +171,44 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
+/* This makes the img under .search-engine-optimization a maximum height of 200px regardless of how big the user screen is */
 .search-engine-optimization img {
     max-height: 200px;
 }
+/* This makes the img under .online-reputation-management a maximum height of 200px regardless of how big the user screen is */
 
 .online-reputation-management img {
     max-height: 200px;
 }
+/* This makes the img under .social-media-marketing a maximum height of 200px regardless of how big the user screen is */
 
 .social-media-marketing img {
     max-height: 200px;
 }
-
+/* This selector makes the h2 element under the search-engine-optimization class have a bottom margin of 20px and a font size of 36 px */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* This selector makes the h2 element under the online-reputation-management class have a bottom margin of 20px and a font size of 36 px */
 .online-reputation-management h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
+/* This selector makes the h2 element under the social-media-marketing class have a bottom margin of 20px and a font size of 36 px */
 
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* This selector makes anything under the footer class tag have a padding of 30px, with the keeping either side of the text clear, with the mentioned font families, and alligning the text to the center */
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
+/* This selector applies to the h2 tag under the footer class tag and makes the font size 20px throughout */
 .footer h2 {
     font-size: 20px;
 }
