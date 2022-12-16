@@ -18,23 +18,23 @@ p {
     font-size: 16px;
 }
 /* This selector applies to anything with the class selector of header and makes the following code happen */
-.header {
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 /* This selector applies to the h1 tag under the header so that it is displayed inline-block with a 48px font size */
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 /* This selector applies to the seo class that is under the h1 child within the header parent */
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 /* This selector applies to any div child element under the header parent element which floats the information to the right of the page */
-.header div {
+header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -42,13 +42,24 @@ p {
     font-size: 20px;
 }
 /* This selector applies to the list under div child element under header parent element */
-.header div ul {
+header div ul {
     list-style-type: none;
 }
 /* This selector applies to the actual list components under the previously mentioned selector to make the list display as an inline element with a slight margin on the left side of each part of the list*/
-.header div ul li {
+header div ul li {
     display: inline-block;
     margin-left: 25px;
+}
+/* This selector makes anything under the footer class tag have a padding of 30px, with the keeping either side of the text clear, with the mentioned font families, and alligning the text to the center */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/* This selector applies to the h2 tag under the footer class tag and makes the font size 20px throughout */
+footer h2 {
+    font-size: 20px;
 }
 
 
@@ -200,15 +211,4 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
-/* This selector makes anything under the footer class tag have a padding of 30px, with the keeping either side of the text clear, with the mentioned font families, and alligning the text to the center */
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-/* This selector applies to the h2 tag under the footer class tag and makes the font size 20px throughout */
-.footer h2 {
-    font-size: 20px;
 }
